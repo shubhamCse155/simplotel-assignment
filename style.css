@@ -1,0 +1,268 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: linear-gradient(to right, #fff4af, #ffadf4);
+        }
+        
+        header {
+            background-color: #ea7573;
+            height: 3.5rem;
+        }
+        
+        .nav-bar {
+            height: 3.5rem;
+            padding: 0 8.7rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        li {
+            list-style-type: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+        
+        .png {
+            height: 45px;
+            width: 45px;
+        }
+        
+        .upper-container {
+            display: flex;
+            justify-content: space-between;
+            /* height: 100vh; */
+        }
+        
+        .upper-left {
+            padding: 10rem 5rem;
+            font-family: sans-serif;
+            flex-basis: 50%;
+        }
+        
+        .upper-left h1 {
+            font-weight: 700;
+            letter-spacing: 5px;
+            font-size: 4rem;
+        }
+        
+        .upper-left p {
+            padding: 5em 0;
+            line-height: 28px;
+            font-size: 1.2em;
+        }
+        
+        .upper-left button {
+            width: 15rem;
+            height: 3em;
+            background-color: #ea7573;
+            border: none;
+            color: #ffff;
+            font-size: 1.08em;
+        }
+        
+        .upper-right {
+            flex-basis: 50%;
+        }
+        
+        .upper-right img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .lower-container {
+            display: flex;
+            margin: 5% 0;
+            gap: 10px;
+        }
+        
+        .lower-left {
+            padding: 5rem 0;
+            padding-left: 5rem;
+            padding-right: 2rem;
+            flex-basis: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            grid-row-gap: 14px;
+            grid-column-gap: 25px;
+            /* max-height: 10rem; */
+        }
+        
+        .lower-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #item-2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        
+        .lower-right {
+            display: flex;
+            flex-basis: 40%;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .lower-right-in {
+            font-family: sans-serif;
+            background-color: #ea7573;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: max-content;
+        }
+        
+        .lower-right-in h2 {
+            font-size: 3.5rem;
+            letter-spacing: 4px;
+            font-weight: 700;
+        }
+        
+        .lower-right-in h3 {
+            font-weight: 100;
+        }
+        
+        .both {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+        
+        @media (max-width:991px) {
+            .lower-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            li {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+            header {
+                height: 3.1rem;
+            }
+            .nav-bar {
+                height: 3.1rem;
+                padding: 0 6rem;
+            }
+            .png {
+                height: 35px;
+                width: 35px;
+            }
+            .upper-left h1 {
+                letter-spacing: 4px;
+                font-size: 3rem;
+            }
+            .upper-left p {
+                padding: 4em 0;
+                line-height: 20px;
+                font-size: 1em;
+            }
+            .upper-left button {
+                width: 13rem;
+                height: 2.5em;
+                font-size: 1em;
+            }
+            .upper-left {
+                padding: 7rem 4rem;
+            }
+            .lower-left {
+                padding: 4rem 0;
+            }
+            .lower-right-in h2 {
+                font-size: 3rem;
+                letter-spacing: 3.5px;
+                font-weight: 600;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            li {
+                font-size: 0.7rem;
+                letter-spacing: 2px;
+            }
+            header {
+                height: 2.8rem;
+            }
+            .nav-bar {
+                height: 2.8rem;
+                padding: 0 4rem;
+            }
+            .png {
+                height: 30px;
+                width: 30px;
+            }
+            .lower-right-in h2 {
+                font-size: 2.5rem;
+                letter-spacing: 3px;
+                font-weight: 600;
+            }
+            .lower-left {
+                grid-row-gap: 10px;
+                grid-column-gap: 18px;
+                grid-template-rows: repeat(2, 200px);
+            }
+            .upper-left {
+                padding: 6rem 2rem;
+            }
+            .lower-right-in h3 {
+                font-size: 0.9rem;
+            }
+            .both img {
+                width: 18px;
+            }
+        }
+        
+        @media (max-width: 479px) {
+            .upper-container {
+                flex-direction: column;
+            }
+            li {
+                font-size: 0.7rem;
+                letter-spacing: 1px;
+            }
+            header {
+                height: 2.5rem;
+            }
+            .nav-bar {
+                height: 2.5rem;
+                padding: 0 1rem;
+            }
+            .png {
+                height: 20px;
+                width: 20px;
+            }
+            .upper-left {
+                padding: 5rem 3rem;
+            }
+            .lower-left {
+                padding: 3rem 0;
+                grid-row-gap: 6px;
+                grid-column-gap: 10px;
+                grid-template-rows: repeat(2, 150px);
+            }
+            .lower-right-in h2 {
+                font-size: 1rem;
+                letter-spacing: 3px;
+                font-weight: 600;
+            }
+            .lower-right-in h3 {
+                font-size: 0.7rem;
+            }
+            .both img {
+                width: 15px;
+            }
+        }
